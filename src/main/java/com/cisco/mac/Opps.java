@@ -20,7 +20,11 @@ public class Opps {
             HttpResponse response = templateBuilder.queryApi();
             StringBuilder result = helper.formatResponse(response);
             JsonNode actualObj = helper.stringToJson(result);
-            LOGGER.info(actualObj.get("vendorDetails").get("companyName").textValue());
+            if (actualObj.get("actualObj") != null) {
+                LOGGER.info(actualObj.get("vendorDetails").get("companyName").textValue());
+            } else {
+                LOGGER.info(actualObj.textValue());
+            }
         } else {
             HelpFormatter formatter = new HelpFormatter();
             formatter.printHelp("mac-checker", helper.getOptions());
