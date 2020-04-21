@@ -1,0 +1,6 @@
+version: '3'
+services:
+  mac_address_lookup:
+    build:
+      context: ./
+      dockerfile: Dockerfile
