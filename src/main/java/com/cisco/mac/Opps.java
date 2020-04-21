@@ -23,7 +23,7 @@ public class Opps {
             if (actualObj.get("vendorDetails") != null) {
                 LOGGER.info(actualObj.get("vendorDetails").get("companyName").textValue());
             } else {
-                LOGGER.info(actualObj.textValue());
+                LOGGER.info(actualObj.toString());
             }
         } else {
             HelpFormatter formatter = new HelpFormatter();
