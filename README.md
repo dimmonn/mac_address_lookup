@@ -28,7 +28,7 @@ java -jar target/mac_address_lookup-1.0-SNAPSHOT-jar-with-dependencies.jar -p {a
 ```
 
 ## Run with docker
-1. replace placeholder {api_key in Dockerfile with real api key
+1. replace placeholder api_key in Dockerfile with real api key
 2. run below command
 ```docker
  make dev
