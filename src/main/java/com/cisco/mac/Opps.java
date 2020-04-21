@@ -20,7 +20,7 @@ public class Opps {
             HttpResponse response = templateBuilder.queryApi();
             StringBuilder result = helper.formatResponse(response);
             JsonNode actualObj = helper.stringToJson(result);
-            if (actualObj.get("actualObj") != null) {
+            if (actualObj.get("vendorDetails") != null) {
                 LOGGER.info(actualObj.get("vendorDetails").get("companyName").textValue());
             } else {
                 LOGGER.info(actualObj.textValue());
