@@ -8,6 +8,8 @@ Mac Resolver is a tool to lookup the company name based on mac address id
 Use a maven to make a build
 
 ```bash
+git clone https://github.com/dimmonn/mac_address_lookup.git
+cd mac_address_lookup
 mvn clean compile assembly:single
 ```
 
@@ -15,6 +17,6 @@ mvn clean compile assembly:single
 
 ```java
 java -jar target/mac_address_lookup-1.0-SNAPSHOT-jar-with-dependencies.jar
-
 ```
+#follow output helper
  
