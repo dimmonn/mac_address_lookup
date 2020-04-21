@@ -19,4 +19,3 @@ mvn clean compile assembly:single
 java -jar target/mac_address_lookup-1.0-SNAPSHOT-jar-with-dependencies.jar
 ```
 #follow output helper
- 
