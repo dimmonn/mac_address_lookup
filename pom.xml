@@ -10,7 +10,7 @@
     <properties>
         <http.client>4.5.12</http.client>
         <cli>1.4</cli>
-        <json>2.11.0.rc1</json>
+        <json>2.12.7.1</json>
     </properties>
 
 
